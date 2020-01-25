@@ -1,6 +1,6 @@
 {
   "name": "browser-names",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Get the alternative names of a browser",
   "license": "MIT",
   "author": "Vincent Weevers",
