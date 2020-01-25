@@ -32,7 +32,7 @@ Get the title of a browser, by any name:
 
 ```js
 names.title('and_chr') // 'Google Chrome for Android'
-names.title('ipad') // 'iOS Safari'
+names.title('ios safari') // 'iOS Safari'
 ```
 
 All functions are case- and casing-insensitive. Their output is lowercase (except for titles). PRs for additional browsers are welcome.

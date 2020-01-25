@@ -3,7 +3,7 @@
 const data = new Map([
   ['Google Chrome for Android', [
     'and_chr', // browserslist
-    'chrome for android', // airtap >= 4
+    'chrome for android',
     'google chrome for android',
     'android chrome'
   ]],
@@ -14,9 +14,11 @@ const data = new Map([
   ]],
   ['iOS Safari', [
     'ios_saf', // browserslist
-    'ios safari', // airtap >= 4
-    'iphone', // airtap/zuul, testling, sauce labs
-    'ipad' // airtap/zuul, testling, sauce labs
+    'ios safari'
+
+    // Exclude these because they can be tied to a particular device simulator.
+    // 'iphone', // airtap/zuul, testling, sauce labs
+    // 'ipad' // airtap/zuul, testling, sauce labs
   ]],
   ['Microsoft Edge', [
     'edge', // browserslist, karma

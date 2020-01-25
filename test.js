@@ -25,7 +25,7 @@ test('names', function (t) {
 test('common', function (t) {
   t.is(names.common('android_chrome'), 'and_chr')
   t.is(names.common('android_chrOme'), 'and_chr')
-  t.is(names.common('ipad'), 'ios_saf')
+  t.is(names.common('ipad'), undefined)
   t.isNot(names.common.all(), names.common.all(), 'unique copy')
   t.same(names.common.all().sort(), [
     'and_chr',
@@ -43,8 +43,8 @@ test('common', function (t) {
 test('title', function (t) {
   t.isNot(names.title.all(), names.title.all(), 'unique copy')
   t.is(names.title.all().length, names.common.all().length)
-  t.is(names.title('iphone'), 'iOS Safari')
-  t.is(names.title('iPhoNe'), 'iOS Safari')
+  t.is(names.title('iphone'), undefined)
+  t.is(names.title('IOS SAFARI'), 'iOS Safari')
   t.is(names.title('and_chr'), 'Google Chrome for Android')
   t.is(names.title('does not exist'), undefined)
   t.end()
