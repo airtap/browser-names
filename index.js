@@ -3,6 +3,7 @@
 const data = new Map([
   ['Google Chrome for Android', [
     'and_chr', // browserslist
+    'chrome android', // browserslist (no space)
     'chrome for android',
     'google chrome for android',
     'android chrome'
@@ -42,6 +43,42 @@ const data = new Map([
     'firefox', // *
     'mozilla firefox',
     'ff' // testling
+  ]],
+  ['Beaker', [
+    'beaker'
+  ]],
+  ['Opera', [
+    'opera'
+  ]],
+  ['Opera Mini', [
+    'opera_mini',
+    'opera mini', // browserslist (no space)
+    'op_mini' // browserslist
+  ]],
+  ['Opera Mobile', [
+    'opera_mobile',
+    'opera mobile', // browserslist (no space)
+    'op_mob' // browserslist
+  ]],
+  ['Brave', [
+    'brave'
+  ]],
+  ['Maxthon', [
+    'maxthon'
+  ]],
+  ['Yandex', [
+    'yandex'
+  ]],
+  ['Safari', [
+    'safari'
+  ]],
+  ['Electron', [
+    'electron'
+  ]],
+  ['Node.js', [
+    'node', // browserslist
+    'nodejs',
+    'node.js'
   ]]
 ])
 

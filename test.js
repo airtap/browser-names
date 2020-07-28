@@ -30,11 +30,21 @@ test('common', function (t) {
   t.same(names.common.all().sort(), [
     'and_chr',
     'android',
+    'beaker',
+    'brave',
     'chrome',
     'edge',
+    'electron',
     'firefox',
     'ie',
-    'ios_saf'
+    'ios_saf',
+    'maxthon',
+    'node',
+    'opera',
+    'opera_mini',
+    'opera_mobile',
+    'safari',
+    'yandex'
   ])
   t.is(names.common('does not exist'), undefined)
   t.end()
